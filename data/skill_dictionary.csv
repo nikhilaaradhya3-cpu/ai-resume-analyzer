@@ -1,0 +1,22 @@
+skill,category
+python,programming
+c++,programming
+c#,programming
+java,programming
+sql,database
+pandas,data science
+scikit-learn,machine learning
+machine learning,machine learning
+fastapi,backend
+docker,devops
+excel,tools
+power bi,tools
+deep learning,machine learning
+llm,machine learning
+rag,machine learning
+nlp,machine learning
+transformers,machine learning
+hugging face,machine learning
+opencv,computer vision
+cnn,machine learning
+yolo,computer vision
