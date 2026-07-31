@@ -20,6 +20,10 @@
 
    This will open the app in your browser at `http://localhost:8501`.
 
+   ## Architecture
+
+   ![Architecture Diagram](docs/architecture.png)
+
 ## Usage
 
 1. Use the sidebar to select a **target job role** (e.g. Data Analyst, ML Engineer) for skill-gap analysis.
