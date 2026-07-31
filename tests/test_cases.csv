@@ -1,0 +1,5 @@
+Test Resume,Expected Top Role,Actual Top Role,Match Score (%),Skills Extracted,Comments
+resume_data_analyst.docx,Data Analyst,Data Analyst,100.0,"power bi, excel, sql, python, pandas","Pass - exact match; all 5 core skills detected"
+resume_ml_engineer.docx,Machine Learning Engineer,Machine Learning Engineer,56.17,"python, machine learning, sql, docker, fastapi, pandas","Pass - correct top role; moderate score due to skill overlap with Data Analyst (python, sql, pandas)"
+resume_nlp_engineer.docx,NLP Engineer,NLP Engineer,78.28,"hugging face, machine learning, nlp, transformers, python, sql","Pass - correct top role with strong match score"
+resume_cv_engineer.docx,Computer Vision Engineer,Computer Vision Engineer,81.11,"machine learning, opencv, cnn, python, yolo","Pass - correct top role with strong match score"
