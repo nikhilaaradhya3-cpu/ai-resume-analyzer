@@ -1,25 +1,48 @@
-# AI Resume Analyzer and Job Recommendation System
-
-An NLP-based educational application built with Streamlit that helps students evaluate how well their resumes match specific job roles. The system extracts text from resumes, identifies technical skills, calculates a match score using TF-IDF and cosine similarity, and generates a personalized learning roadmap.
-
-## Features
-* **Multi-Format Support:** Upload resumes in both PDF and DOCX formats.
-* **Skill Extraction:** Automatically parses and extracts technical skills while retaining important symbols (e.g., C++, C#, .NET).
-* **Job Role Matching:** Compares extracted skills against industry roles like Data Analyst, ML Engineer, and AI Engineer.
-* **Match Scoring:** Calculates an objective percentage score based on cosine similarity.
-* **Skill-Gap Analysis:** Clearly highlights both matched and missing skills for a targeted role.
-* **Learning Roadmap:** Generates a rule-based, week-by-week learning plan for missing skills.
-
-## Technology Stack
-* **Language:** Python
-* **Frontend:** Streamlit
-* **Text Extraction:** `pypdf`, `python-docx`
-* **Data Processing & ML:** `pandas`, `numpy`, `scikit-learn`
-* **Text Cleaning:** Regular Expressions (Regex)
-
-## Installation and Setup
-
 1. **Clone the repository:**
-   ```bash
+`````bash
    git clone [https://github.com/your-username/ai-resume-analyzer.git](https://github.com/your-username/ai-resume-analyzer.git)
    cd ai-resume-analyzer
+`````
+
+**with this:**
+
+`````markdown
+2. **Install dependencies:**
+````bash
+   pip install -r requirements.txt
+````
+
+3. **Run the application:**
+
+````bash
+   streamlit run app.py
+````
+
+   This will open the app in your browser at `http://localhost:8501`.
+
+## Usage
+
+1. Use the sidebar to select a **target job role** (e.g. Data Analyst, ML Engineer) for skill-gap analysis.
+2. Upload a resume in **PDF or DOCX** format using the file uploader.
+3. The app will display:
+   - The technical skills extracted from your resume
+   - Your top 3 recommended job roles with match scores
+   - A bar chart comparing match scores across all roles
+   - Skills you already have vs. skills missing for your selected target role
+   - A suggested week-by-week learning roadmap for the missing skills
+
+## Live Demo
+
+Try the deployed app here: [AI Resume Analyzer](https://ai-resume-analyzer-jzcctdgjgalidehyemooys.streamlit.app)
+
+## Sample Resumes
+
+The `sample_resumes/` folder contains anonymized example resumes for Data Analyst, ML Engineer, NLP Engineer, and Computer Vision Engineer roles, useful for testing the app.
+
+## Responsible AI Note
+
+This tool is meant for guidance only, not automatic hiring or rejection decisions. It evaluates only job-related skills, education, projects, and experience — it does not score gender, age, religion, nationality, or other protected attributes. Match scores are estimates, not recruiter decisions.
+
+`````
+
+Save the file, then commit and push:
